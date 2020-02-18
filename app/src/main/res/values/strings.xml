@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PUBG Mobile Weapon Data</string>
+    <string name="weapon_type">Type</string>
+    <string name="weapon_list">Weapon List</string>
+    <string name="about">About</string>
+    <string name="assault_rifle_ar">Assault Rifle (AR)</string>
+    <string name="sniper_rifle">Sniper Rifle</string>
+    <string name="light_machine_gun_lmg">Light Machine Gun (LMG)</string>
+    <string name="submachine_gun_smg">Submachine Gun (SMG)</string>
+    <string name="shotgun">Shotgun</string>
+    <string name="pistol">Pistol</string>
+    <string name="show_all">Show All</string>
+    <string name="namaku">Wawan Eka Setiyawan</string>
+    <string name="emailku">wawaneka567@gmail.com</string>
+</resources>

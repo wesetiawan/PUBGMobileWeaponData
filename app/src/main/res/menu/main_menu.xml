@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_ar_weapon"
+        android:title="@string/assault_rifle_ar"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_sniper_weapon"
+        android:title="@string/sniper_rifle"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_lmg_weapon"
+        android:title="@string/light_machine_gun_lmg"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_smp_weapon"
+        android:title="@string/submachine_gun_smg"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_shotgun_weapon"
+        android:title="@string/shotgun"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_pistol_weapon"
+        android:title="@string/pistol"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_show_all"
+        android:title="@string/show_all"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/about"
+        app:showAsAction="never"/>
+</menu>

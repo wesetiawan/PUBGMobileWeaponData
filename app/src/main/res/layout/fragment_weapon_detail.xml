@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.WeaponDetailFragment">
+
+    <ImageView
+        android:id="@+id/iv_weapon"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/cardview_dark_background"
+        android:src="@drawable/akm" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_weapon_power"
+                style="@style/Detail.Title"
+                android:text="Power" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="49" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Detail.Title"
+                android:text="Range" />
+
+            <TextView
+                android:id="@+id/tv_weapon_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Detail.Title"
+                android:text="Stability" />
+
+            <TextView
+                android:id="@+id/tv_weapon_stability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="34" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Detail.Title"
+                android:text="Firing Rate" />
+
+            <TextView
+                android:id="@+id/tv_weapon_firing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="59" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Detail.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text"
+            android:textAlignment="viewStart" />
+
+    </LinearLayout>
+
+</LinearLayout>

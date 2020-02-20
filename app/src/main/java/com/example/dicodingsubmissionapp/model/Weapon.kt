@@ -5,5 +5,6 @@ data class Weapon (
     var detail: String = "",
     var ammo: String ="",
     var type: String="",
+    var description: String="",
     var photo: Int = 0
 )

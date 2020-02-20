@@ -13,6 +13,7 @@ import kotlinx.android.synthetic.main.fragment_weapon_list.*
 
 class WeaponListFragment : Fragment(){
 
+    private var dataList= ArrayList<Weapon>()
     private lateinit var adapter: ListWeaponAdapter
 
 
@@ -64,7 +65,9 @@ class WeaponListFragment : Fragment(){
         }
     }
     private fun showWeapon(a: String?){
+        dataList.clear()
         adapter.filter.filter(a)
+        dataList.addAll(WeaponData.listData)
         adapter.setOnItemClickCallback(object : ListWeaponAdapter.OnItemClickCallback{
             override fun onItemClicked(data: Weapon) {
                 showSelectedWeapon(data)

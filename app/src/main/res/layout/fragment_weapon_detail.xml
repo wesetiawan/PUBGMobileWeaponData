@@ -11,13 +11,13 @@
         android:id="@+id/iv_weapon"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:background="@color/cardview_dark_background"
+        android:background="#3C3737"
         android:src="@drawable/akm" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0"
+        android:weightSum="4"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -29,14 +29,13 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_weapon_power"
                 style="@style/Detail.Title"
-                android:text="Power" />
+                android:text="@string/power" />
 
             <TextView
+                android:id="@+id/tv_weapon_power"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="49" />
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
         <LinearLayout
@@ -49,13 +48,12 @@
 
             <TextView
                 style="@style/Detail.Title"
-                android:text="Range" />
+                android:text="@string/range" />
 
             <TextView
                 android:id="@+id/tv_weapon_range"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="60" />
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
         <LinearLayout
@@ -68,13 +66,12 @@
 
             <TextView
                 style="@style/Detail.Title"
-                android:text="Stability" />
+                android:text="@string/stability" />
 
             <TextView
                 android:id="@+id/tv_weapon_stability"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="34" />
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
         <LinearLayout
@@ -87,14 +84,58 @@
 
             <TextView
                 style="@style/Detail.Title"
-                android:text="Firing Rate" />
+                android:text="@string/firing_rate" />
 
             <TextView
                 android:id="@+id/tv_weapon_firing"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="59" />
+                android:layout_height="wrap_content"/>
         </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Detail.Title"
+                android:text="@string/type" />
+
+            <TextView
+                android:id="@+id/tv_weapon_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Detail.Title"
+                android:text="@string/ammo" />
+
+            <TextView
+                android:id="@+id/tv_weapon_ammo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
     </LinearLayout>
 
     <LinearLayout
@@ -107,12 +148,13 @@
             style="@style/Detail.Title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Deskripsi" />
+            android:text="@string/deskripsi" />
 
         <TextView
+            android:padding="6dp"
+            android:id="@+id/tv_weapon_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="text"
             android:textAlignment="viewStart" />
 
     </LinearLayout>

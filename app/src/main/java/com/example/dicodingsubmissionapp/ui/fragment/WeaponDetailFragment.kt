@@ -23,7 +23,6 @@ class WeaponDetailFragment : Fragment(){
                 }
             }
     }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -33,7 +32,6 @@ class WeaponDetailFragment : Fragment(){
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_weapon_detail,container,false)
     }
-
     override fun onStart() {
         super.onStart()
         selected_weapon?.photo?.let { iv_weapon.setImageResource(it) }
@@ -44,11 +42,6 @@ class WeaponDetailFragment : Fragment(){
         tv_weapon_power.text = selected_weapon?.power
         tv_weapon_stability.text = selected_weapon?.stability
         tv_weapon_firing.text = selected_weapon?.firingrate
-
-    }
-
-    private fun getWeapon(){
-
     }
 
 }

@@ -15,6 +15,7 @@ class WeaponListFragment : Fragment(){
 
     private var dataList= ArrayList<Weapon>()
     private lateinit var adapter: ListWeaponAdapter
+    var selectedWeaponType : String? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +32,11 @@ class WeaponListFragment : Fragment(){
         adapter = ListWeaponAdapter(WeaponData.listData)
         rv_weapon.adapter = adapter
         showWeapon(" ")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        showWeapon(selectedWeaponType)
     }
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
@@ -66,6 +72,7 @@ class WeaponListFragment : Fragment(){
     }
     private fun showWeapon(a: String?){
         dataList.clear()
+        selectedWeaponType = a
         adapter.filter.filter(a)
         dataList.addAll(WeaponData.listData)
         adapter.setOnItemClickCallback(object : ListWeaponAdapter.OnItemClickCallback{

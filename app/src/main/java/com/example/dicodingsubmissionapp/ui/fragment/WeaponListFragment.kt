@@ -15,7 +15,7 @@ class WeaponListFragment : Fragment(){
 
     private var dataList= ArrayList<Weapon>()
     private lateinit var adapter: ListWeaponAdapter
-    var selectedWeaponType : String? = null
+    var selectedWeaponType : String = ""
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,7 +31,7 @@ class WeaponListFragment : Fragment(){
         rv_weapon?.layoutManager = LinearLayoutManager(context)
         adapter = ListWeaponAdapter(WeaponData.listData)
         rv_weapon.adapter = adapter
-        showWeapon(" ")
+        showWeapon(selectedWeaponType)
     }
 
     override fun onResume() {
@@ -70,7 +70,7 @@ class WeaponListFragment : Fragment(){
             }
         }
     }
-    private fun showWeapon(a: String?){
+    private fun showWeapon(a: String){
         dataList.clear()
         selectedWeaponType = a
         adapter.filter.filter(a)
